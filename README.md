@@ -1,5 +1,5 @@
 # PostgresSQL README
-
+---
 ## listar base de datos = \l 
 <pre>postgres=# \l
                               List of databases
@@ -39,7 +39,7 @@ INSERT INTO persona VALUES (1,'Camilo', 'hombre');
  Camilo | hombre
 (1 row)
 </pre>
-
+---
 # DATOS IMPORTANTES !!!
 
 ### Añadir PRIMARY KEY
@@ -56,7 +56,7 @@ ALTER TABLE empleados ALTER COLUMN nombre SET NOT NULL;
 
 ### Añadir CHECK
 ALTER TABLE empleados ADD CONSTRAINT check_edad CHECK (edad > 0);
-
+---
 # FECHAS !!!
 
 ### Para obtener la fecha actual (solo AÑO/MES/DIA)
@@ -78,8 +78,17 @@ SELECT CURRENT_TIMESTAMP;
 </pre>
 
 ##### SELECT AGE('2024-07-01', '2024-06-01');
+
+### Extraer solo el año
 ---
-## 
+<pre>SELECT EXTRACT(YEAR FROM TIMESTAMP &apos;2024-07-13 14:23:45&apos;);
+ extract 
+---------
+    2024
+(1 row)
+</pre>
+
+##### SELECT EXTRACT(YEAR FROM TIMESTAMP '2024-07-13 14:23:45');
 
 
 
