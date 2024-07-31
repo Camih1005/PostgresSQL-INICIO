@@ -78,7 +78,7 @@ SELECT CURRENT_TIMESTAMP;
 </pre>
 
 ##### SELECT AGE('2024-07-01', '2024-06-01');
---
+---
 ## 
 
 
