@@ -42,10 +42,10 @@ INSERT INTO persona VALUES (1,'Camilo', 'hombre');
 
 # DATOS IMPORTANTES !!!
 
-### alterar primary key:
---
+## alterar primary key:
+´´
 ALTER TABLE empleados ADD PRIMARY KEY (id);
---
+´´
 
 
 
